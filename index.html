@@ -1,108 +1,173 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
- <title>Perl Editor, Perl IDE</title>
- <link rel="stylesheet" href="https://padre.perlide.org/static/static.css" type="text/css" />
- <link rel="stylesheet" href="/style.css" type="text/css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perl IDE - Development Tools and Editors</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-  <h1 id="masthead"><span>Perl IDE</span></h1>
-  <div class="center_column">
-    <div class="navigation_wrapper">
-      <ul class="navigation bottomheavy">
+  <div class="container">
+    <div class="header">
+      <img src="perl_camel.png" alt="Perl Camel Logo" class="logo" style="width: 100px; height: 100px">
+      <h1>Perl IDE</h1>
+      <p class="tagline">Development Tools and Editors for Perl Programming</p>
+    </div>
+
+    <nav class="navigation">
+      <ul>
         <li><a href="/">Home</a></li>
+        <li><a href="https://survey.perlide.org/">Developer Survey</a></li>
+        <li><a href="https://github.com/perl-ide/">Perl IDE Github</a></li>
       </ul>
-      <div class="spacer"></div>
-    </div>
-  </div>
-  <div id="content_wrapper">
-    <div id="content" class="center_column" >
-      <!--  end head     -->
+    </nav>
 
-      <!-- wrap content -->
-      <div style="float: top;">
-        <!-- begin styled panel -->
-        <div class="styled_panel_wrapper">
-          <div class="styled_panel">
-            <div id="polls">
-              See also the Perl IDE and editor polls:
-              <ul >
-              <li><span>October 2009</span><a href="/poll200910/">Which editor(s) or IDE(s) are you using for Perl development?</a></li>
-              <li><span>November 2009</span><a href="/poll200911/">What other technologies, languages, templating systems are you using besides Perl?</a></li>
-              <li><span>April 2010</span><a href="/poll201004/">What is the primary operating system you use for developing Perl applications?</a></li>
-              <li><span>May 2010</span><a href="/polls/the-most-important-features-of-an-employer-or-job-opportunity/">What are the most important features of an employer or a job opportunity for you?</a></li>
-              </ul>
-            </div>
-            <div class="spacer" ></div>
-          </div>
-          <b class="shadowed"></b>
-        </div>
-        <!-- end styled panel -->
+    <script src="https://perl-ads.perlhacks.com/perl-ads.js"></script>
+    <div id="perl-ad-target"></div>
+    <noscript>
+      <div>Please enable JavaScript to view Perl related advertisements from the Perl Ads server.</div>
+    </noscript>
+
+    <h2 class="section-title">Surveys</h2>
+    <div class="content-section">
+      <div id="polls">
+        <p>See also our Perl IDE and editor surveys:</p>
+        <ul>
+          <li>
+            <span>October 2025</span>
+            <a href="https://survey.perlide.org/results/2025">Revival. What tools do you use alongside your favorite Perl editor?</a>
+          </li>
+          <li><span>May 2010</span><a href="/polls/the-most-important-features-of-an-employer-or-job-opportunity/">What
+              are the most
+              important features of an employer or a job opportunity for you?</a></li>
+          <li><span>April 2010</span><a href="/poll201004/">What is the primary operating system you use for
+              developing Perl applications?</a></li>
+          <li><span>November 2009</span><a href="/poll200911/">What other technologies, languages, templating
+              systems are you using besides Perl?</a></li>
+          <li><span>October 2009</span><a href="/poll200910/">Which editor(s) or IDE(s) are you using for Perl
+              development?</a></li>
+        </ul>
       </div>
+    </div>
 
-      <!-- wrap content -->
-      <div style="float: top;">
-        <!-- begin styled panel -->
-        <div class="styled_panel_wrapper">
-          <div class="styled_panel">
-            <p>
-            See the chart on <a href="https://www.perlmonks.org/?node=Perl%20Development%20Tools">Perl Development Tools</a>
-            </p>
+    <div class="content-section">
+      <h2 class="section-title">Perl IDE Projects</h2>
+      <table class="styled_table">
+        <thead>
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/perl-ide/App-perlimports">App::perlimports</a></td>
+            <td>Make implicit Perl imports explicit</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/perl-ide/App-perlvars">App::perlvars</a></td>
+            <td>Find and eliminate unused variables in your Perl code</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/perl-ide/open-this">Open::This</a></td>
+            <td>Try to do the right thing when opening files</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/perl-ide/coc-perl">coc-perl</a></td>
+            <td>Perl Language client for Language Server Protocol through coc.nvim</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-            <p>
-            There are several cross platform IDEs for Perl.
-            </p>
+    <div class="content-section">
+      <h2 class="section-title">Modern Perl IDEs and Editors</h2>
 
-            <table class="styled_table">
-            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
-            <tr>
-            <td><a href="https://padre.perlide.org/">Padre</a></td>
-            <td>The Perl Application Development and Refactoring Environment (written in Perl 5)</td>
-            </tr>
-            <tr><td>&nbsp;</td><td>&nbsp;</td></tr>
+      <p>There are many modern editors that support Perl, including:</p>
 
-            <tr>
+      <table class="styled_table">
+        <thead>
+          <tr>
+            <th>IDE/Editor</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://code.visualstudio.com/">Visual Studio Code</a></td>
+            <td>Popular modern editor with excellent Perl extensions and LSP support</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.vim.org/">Vim/Neovim</a></td>
+            <td>Powerful text editor with <a href="https://www.vim.org/scripts/script.php?script_id=556">excellent Perl
+                support</a></td>
+          </tr>
+          <tr>
+            <td><a href="https://www.gnu.org/software/emacs/">Emacs</a></td>
+            <td>Extensible editor with <a href="https://www.emacswiki.org/cgi-bin/wiki/CPerlMode">CPerl Mode</a></td>
+          </tr>
+          <tr>
             <td><a href="https://www.eclipse.org/">Eclipse</a></td>
-            <td>with <a href="https://www.epic-ide.org/">the EPIC plugin</a> or with <a href="https://code.google.com/archive/p/perlipse/">Perlipse</a> using dltk</td>
-            </tr>
+            <td>with <a href="https://www.epic-ide.org/">the EPIC plugin</a> or with <a
+                href="https://code.google.com/archive/p/perlipse/">Perlipse</a> using DLTK</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></td>
+            <td>with <a href="https://plugins.jetbrains.com/plugin/7796">Perl5 support plugin</a>. Also works with
+              PhpStorm, WebStorm, RubyMine and PyCharm</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.sublimetext.com/">Sublime Text</a></td>
+            <td>Fast, lightweight editor with Perl syntax highlighting and package ecosystem</td>
+          </tr>
+          <tr>
+            <td><a href="https://pulsar-edit.dev/">Pulsar</a></td>
+            <td>Community-driven successor to Atom with Perl language support</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-            <tr>
-            <td>ActiveState</td>
-            <td><a href="http://www.activestate.com/Products/komodo_ide/">proprietary Komodo IDE</a> or <a href="http://www.activestate.com/Products/komodo_ide/komodo_edit.mhtml">free Komodo Edit</a></td>
-            </tr>
 
-            <tr>
-            <td><a href="http://kephra.sourceforge.net/">Kephra</a></td>
-            <td>Programmers Editor along perl-like Paradigms, written in Perl</td>
-            </tr>
+    <div class="content-section">
+      <h2 class="section-title">Legacy Perl Editors</h2>
 
-            <tr>
-            <td><a href="http://www.vim.org/">Gvim</a></td>
-                <td>with <a href="http://www.vim.org/scripts/script.php?script_id=556">Perl support</a></td>
-            </tr>
+      <p>The following are editors that are no longer actively maintained, but still support Perl:</p>
 
-            <tr>
-                <td><a href="http://www.gnu.org/software/emacs/">Emacs</a></td>
-                <td>with <a href="http://www.emacswiki.org/cgi-bin/wiki/CPerlMode">CPerl Mode</a></td>
-            </tr>
-
-            <tr>
-                <td><a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a></td>
-                <td>with <a href="https://plugins.jetbrains.com/plugin/7796">Perl5 support plugin</a>. Also works with PhpStorm, WebStorm, RubyMine and PyCharm</td>
-            </tr>
-            </table>
-
-            <div class="spacer" ></div>
-          </div>
-          <b class="shadowed"></b>
-        </div>
-        <!-- end styled panel -->
-      </div>
+      <table class="styled_table">
+        <thead>
+          <tr>
+            <th>IDE/Editor</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://padre.perlide.org/">Padre</a></td>
+            <td>Perl IDE with a focus on simplicity and ease of use</td>
+          </tr>
+          <tr>
+            <td><a href="https://www.activeperl.com/komodo-ide/">Komodo IDE</a></td>
+            <td>Formerly popular IDE with Perl support, now discontinued</td>
+          </tr>
+          <tr>
+            <td><a href="https://atom.io/">Atom</a></td>
+            <td>Hackable text editor for the 21st century</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  <a href="https://github.com/PadreIDE/perlide.org/">source in GitHub</a>
-</body>
-</html>
 
+  <div class="footer">
+    <p><a href="https://github.com/PadreIDE/perlide.org/">📂 View source on GitHub</a> |
+      <a href="https://survey.perlide.org/">📊 Take the Developer Survey</a>
+    </p>
+  </div>
+
+</body>
+
+</html>
